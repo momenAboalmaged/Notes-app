@@ -1,16 +1,21 @@
 import nodeoutlook from 'nodejs-nodemailer-outlook'
 
-export function sendEmail(dest, message) {
-  nodeoutlook.sendEmail({
+export function sendEmail(dest,message){
+
+nodeoutlook.sendEmail({
     auth: {
-      user: "routeAlex123@outlook.com",
-      pass: "routeAlex@123",
+        user: "TomnayaSolutions@outlook.com",
+        pass: "Zatona1234@momen"
     },
-    from: "routeAlex123@outlook.com",
+    from: 'TomnayaSolutions@outlook.com',
     to: dest,
-    subject: "Hey you, awesome!",
-    html: message,
+    subject: 'Hi , bro welcome to Tomnaya',
+    html:message,
     onError: (e) => console.log(e),
-    onSuccess: (i) => console.log(i),
-  });
+    onSuccess: (i) => console.log(i)
+}
+
+
+);
+
 }
